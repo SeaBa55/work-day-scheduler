@@ -32,19 +32,12 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+![day planner demo](./assets/05-third-party-apis-homework-demo.gif)
 
 ## Version History
 
-work-day-scheduler_v1.0 - 
-
+```
+work-day-scheduler_v1.0 - Formatted page layout to go along with my typical assignment styling (style.css lines 1-4, 9-33, 48-53, 58-60, 64-69, 75-91, 114-115, 125-140). Added nav-bar, sticky footer, and 2 example time blocks to the day scheduler for styling pourposes (index.html lines 38-43, 60-82, 91-97); Created a blank javascript file, and added javascript relative path (index.html line 106).
+```
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
