@@ -40,9 +40,11 @@ work-day-scheduler_v1.0 - Formatted page layout to go along with my typical assi
 
 work-day-scheduler_v1.1 - Added functionality to the save buttons by saving to localStorage on save button click events (script.js lines 10-20). Added a for loop that runs once at the beginning of my script, to populate any feilds that had text saved previously (this way saved text will polulate after refresh events)(script.js lines 2-7).
 
-work-day-scheduler_v1.2 - Added colorSchedule function to set apropriate time-based color scheme to the scheduler. This function adds and removes classes "past", "present", "future" to color the text area background of each time block depending on the time value (in hours) of Moment.js (script.js lines 31-73); The colorSchedule function is called upon initialization of the script, and periodically every 10 seconds with the setInterval method (script.js lines 2 &5); Set the border radii of the "past", "present", "future" classes to mathch the time block container radius (this was causing a discontinuity of the shceduler's time block borders while not applied)(style.css lines 99, 107, 115).
+work-day-scheduler_v1.2 - Added colorSchedule function to set apropriate time-based color scheme to the scheduler. This function adds and removes classes "past", "present", "future" to color the text area background of each time block depending on the time value (in hours) of Moment.js (script.js lines 31-73); The colorSchedule function is called upon initialization of the script, and periodically every 10 seconds with the setInterval method (script.js lines 2 &5); Set the border radii of the "past", "present", "future" classes to match the time block container radius (this was causing a discontinuity of the shceduler's time block borders while not applied)(style.css lines 99, 107, 115).
 
 work-day-scheduler_v1.3 - Added the date to the jumbotron (Note: continuously updated every 10 sec)(script.js line 36); Added padding of 20px to the top and bottom of the scheduler to reduce the size of the jumbotron container (style.css line 50).
+
+work-day-scheduler_v1.4 - Changed the way the script colors the time block background; instead of coloring the entire div, it now colors the text area only (script.js lines 41, 47, 56). Removed border-radius from the classes "past", "present", "future", since they are no longer being applied to the entire time block div (style.css lines 103, 111, 119).
 
 ## Wish list
 

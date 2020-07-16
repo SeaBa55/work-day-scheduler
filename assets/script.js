@@ -38,13 +38,13 @@ function colorSchedule(){
     for( i = 9; i < ($(".time-block").length + 9) ; i++ ) {
 
         // initialize global variable that refers to each time block's id
-        var ths = $("#hour-"+i);
+        var ths = $("#hour-"+i).children(".description")
 
         // remove previous styling to avoid conflicting styles
         ths.removeClass("past");
         ths.removeClass("present");
         ths.removeClass("future");
-        ths.children("textarea").removeAttr("placeholder");
+        ths.removeAttr("placeholder");
 
         // if current time is equal to the time block in this loop iteratation
         if (currentTimeHours == i) {
@@ -53,7 +53,7 @@ function colorSchedule(){
             ths.addClass("present");
 
             // add placeholder text "Current hour - Let's begin your day..." to the current time block
-            ths.children("textarea").attr("placeholder","Current hour - Type to plan your day...");
+            ths.attr("placeholder","Current hour - Type to plan your day...");
             
         // if current time is greater than the time block in this loop iteratation
         } else if (currentTimeHours > i) {
