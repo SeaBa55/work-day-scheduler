@@ -22,16 +22,17 @@ $(".saveBtn").on("click", function() {
     var time = $(this).parent().attr("id");
 
     // save the text in "value" to localStorage using "time" as the key
-    localStorage.setItem(time, value)
+    localStorage.setItem(time, value);
 });
-
-// add current date to jumbotron; create a save all button, and a clear all button
 
 // function that sets the workday schedule's time-based color scheme
 function colorSchedule(){
 
     // initialize global variable that keeps the current hours using Moment.js
-    var currentTimeBlock = moment().hours();
+    var currentTimeHours = moment().hours();
+
+    // add the current date to the jumbotron display area
+    $("#currentDay").text(moment().format('dddd')+", "+moment().format('MMMM Do YYYY'));
 
     // loop iterates through the time blocks availible (hour 9a - 5p)
     for( i = 9; i < ($(".time-block").length + 9) ; i++ ) {
@@ -40,31 +41,31 @@ function colorSchedule(){
         var ths = $("#hour-"+i);
 
         // remove previous styling to avoid conflicting styles
-        ths.removeClass("past")
-        ths.removeClass("present")
-        ths.removeClass("future")
-        ths.children("textarea").removeAttr("placeholder")
+        ths.removeClass("past");
+        ths.removeClass("present");
+        ths.removeClass("future");
+        ths.children("textarea").removeAttr("placeholder");
 
         // if current time is equal to the time block in this loop iteratation
-        if (currentTimeBlock == i) {
+        if (currentTimeHours == i) {
 
             // add class "present" to style this time block as current
-            ths.addClass("present")
+            ths.addClass("present");
 
             // add placeholder text "Current hour - Let's begin your day..." to the current time block
-            ths.children("textarea").attr("placeholder","Current hour - Type to plan your day...")
+            ths.children("textarea").attr("placeholder","Current hour - Type to plan your day...");
             
         // if current time is greater than the time block in this loop iteratation
-        } else if (currentTimeBlock > i) {
+        } else if (currentTimeHours > i) {
 
             // add class "past" to style this time block as old
-            ths.addClass("past")
+            ths.addClass("past");
         
         // else current time is must be less than the time block in this loop iteratation
         } else {
 
             // in which case we apply the "future" class to style this time block as new
-            ths.addClass("future")
+            ths.addClass("future");
 
         }
 

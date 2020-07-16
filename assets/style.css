@@ -46,6 +46,10 @@ textarea{
   color: #343A40;
   border-radius: 0;
 
+  /* added padding of 20px to reduce the size of the jumbotron container */
+  padding: 20px;
+
+
   /* make line divider 1 px high */
   border-bottom: 1px solid #212529;
 
@@ -110,7 +114,7 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
-  
+
   /* radius set to mathch the time block container radius */
   border-radius: 15px;
 }
