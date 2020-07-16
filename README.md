@@ -32,7 +32,7 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./assets/Work-Day-Scheduler.GIF)
+![day planner demo](./assets/Work-Day-Scheduler.gif)
 
 ## Version History
 
