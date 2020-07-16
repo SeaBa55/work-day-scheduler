@@ -46,9 +46,13 @@ work-day-scheduler_v1.3 - Added the date to the jumbotron (Note: continuously up
 
 work-day-scheduler_v1.4 - Changed the way the script colors the time block background; instead of coloring the entire div, it now colors the text area only (script.js lines 41, 47, 56). Removed border-radius from the classes "past", "present", "future", since they are no longer being applied to the entire time block div (style.css lines 103, 111, 119).
 
+work-day-scheduler_v1.5 - Changed the time block text area font color to black, and the placeholder text on the current hour time block text color to match the nav-bar dark theme (style.css lines 100, 105, 110, 113-115).
+
 ## Wish list
 
 create "save all", and "clear all" button.
+
+display current time in the top right portion of the nav-bar 
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
