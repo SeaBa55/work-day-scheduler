@@ -40,5 +40,7 @@ work-day-scheduler_v1.0 - Formatted page layout to go along with my typical assi
 
 work-day-scheduler_v1.1 - Added functionality to the save buttons by saving to localStorage on save button click events (script.js lines 10-20). Added a for loop that runs once at the beginning of my script, to populate any feilds that had text saved previously (this way saved text will polulate after refresh events)(script.js lines 2-7).
 
+work-day-scheduler_v1.2 - Added colorSchedule function to set apropriate time-based color scheme to the scheduler. This function adds and removes classes "past", "present", "future" to color the text area background of each time block depending on the time value (in hours) of Moment.js (script.js lines 31-73); The colorSchedule function is called upon initialization of the script, and periodically every 10 seconds with the setInterval method (script.js lines 2 &5); Set the border radii of the "past", "present", "future" classes to mathch the time block container radius (this was causing a discontinuity of the shceduler's time block borders while not applied)(style.css lines 99, 107, 115).
+
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
